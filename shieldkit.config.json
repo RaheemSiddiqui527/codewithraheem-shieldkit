@@ -1,0 +1,6 @@
+{
+  "ignorePaths": [
+    "tests"
+  ],
+  "severityThreshold": "high"
+}

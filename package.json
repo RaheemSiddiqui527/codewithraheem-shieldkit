@@ -1,0 +1,64 @@
+{
+  "name": "@codewithraheem/shieldkit",
+  "version": "0.1.0",
+  "description": "Build with AI. Ship with Confidence. Modular security and code-quality toolkit for modern codebases.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "bin": {
+    "shieldkit": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint src tests",
+    "format": "prettier --check \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "security",
+    "static-analysis",
+    "code-quality",
+    "ai-safety",
+    "shieldkit",
+    "codewithraheem",
+    "vulnerability-scanner",
+    "ast",
+    "cli"
+  ],
+  "author": "CodeWithRaheem",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.26.9",
+    "commander": "^12.1.0",
+    "diff": "^9.0.0",
+    "picocolors": "^1.1.1",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.71.2",
+    "vitest": "^5.0.5"
+  }
+}
