@@ -1,6 +1,6 @@
 {
   "name": "@codewithraheem/shieldkit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Build with AI. Ship with Confidence. Modular security and code-quality toolkit for modern codebases.",
   "type": "module",
   "main": "./dist/index.cjs",

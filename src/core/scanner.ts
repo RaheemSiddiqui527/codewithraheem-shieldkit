@@ -15,7 +15,7 @@ import { RulesEngine } from './rules-engine.js';
 import { createDefaultRuleRegistry } from '../rules/registry.js';
 import { parseSourceToAST } from '../analyzers/javascript/ast-visitor.js';
 
-export const SHIELDKIT_VERSION = '0.1.0';
+export const SHIELDKIT_VERSION = '0.1.1';
 
 export async function runScan(options: ScanOptions): Promise<ScanResult> {
   const startTime = Date.now();
